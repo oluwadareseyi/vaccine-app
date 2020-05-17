@@ -521,3 +521,22 @@
     }
   }
 }
+
+@media screen and (max-width: 350px) {
+
+  .services-container {
+    padding: 25px 5%;
+  }
+
+  .about-container {
+    &__images {
+      flex-direction: column;
+      align-items: center;
+
+      .img-1 {
+        margin: 0;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
