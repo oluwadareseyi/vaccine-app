@@ -1,5 +1,3 @@
-@import './index.scss';
-
 @mixin button {
   outline: none;
   border: transparent;
@@ -241,7 +239,7 @@
 
     .box {
       background: #242C90;
-      box-shadow: 0 7px 23px 0 #C6CAFB;
+      box-shadow: 0 7px 23px 7px #C6CAFB;
       margin-right: 30px;
       border-radius: 5px;
 

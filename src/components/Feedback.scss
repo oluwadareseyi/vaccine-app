@@ -1,0 +1,150 @@
+.feedback {
+    display: flex;
+    padding: 100px 8%;
+    justify-content: space-between;
+
+    .left {
+        .img {
+            width: 500px;
+        }
+    }
+
+    .right {
+        // position: relative;
+        padding-right: 40px;
+        padding-left: 120px;
+
+        .title-small {
+            color: #000000;
+            font-size: 12px;
+        }
+
+        .title {
+            color: #2E37A4;
+            font-size: 35px;
+            font-weight: bold;
+            padding: 25px 0;
+        }
+
+
+
+        .arrows {
+            display: flex;
+            padding: 30px 0;
+
+            .arrow-left {
+                width: 15px;
+                margin-right: 20px;
+                cursor: pointer;
+            }
+
+            .arrow-right {
+                width: 30px;
+                cursor: pointer;
+            }
+        }
+    }
+
+
+}
+
+.quote-container {
+    width: 440px;
+    overflow: hidden;
+
+    .quote-image {
+        position: absolute;
+        top: -120px;
+        left: -10px;
+        width: 90px;
+    }
+
+    .quotes {
+        display: flex;
+        position: relative;
+        width: 880px;
+
+        .quote {
+            transition: transform 500ms ease-in-out;
+            transform: translate(-440px);
+            width: 440px;
+        }
+
+        .text {
+            color: #262626;
+            padding: 30px 0;
+            line-height: 2;
+        }
+
+        .name {
+            margin: 10px 0;
+        }
+
+        .position {
+            font-size: 14px;
+        }
+
+    }
+
+}
+
+@media screen and (max-width: 1050px) {
+    .feedback {
+        padding: 100px 9%;
+
+        .right {
+            padding: 0;
+        }
+
+        .left {
+            .img {
+                width: 400px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .feedback {
+        flex-direction: column-reverse;
+
+        .left {
+            text-align: center;
+
+            .img {
+                width: 100%;
+            }
+        }
+
+        .right {}
+    }
+
+    .quote-container {
+        width: unset;
+    }
+}
+
+@media screen and (max-width: 550px) {
+
+    .feedback {
+        padding: 50px 5%;
+    }
+
+    .quote-container {
+        width: 320px;
+
+        .text {
+            width: 320px;
+        }
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .quote-container {
+        width: 250px;
+
+        .text {
+            width: 250px;
+        }
+    }
+}

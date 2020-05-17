@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.scss";
+import FeedBack from "./components/Feedback";
 import Tablets from "./assets/images/Icon awesome-tablets.svg";
 import Syringe from "./assets/images/Icon metro-injection.svg";
 import Bubbles from "./assets/images/Icon ionic-ios-chatbubbles.svg";
@@ -129,6 +130,8 @@ const App = () => {
           </div>
         </div>
       </div>
+
+      <FeedBack />
     </div>
   );
 };
