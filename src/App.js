@@ -42,7 +42,42 @@ const App = () => {
         </div>
       </div>
 
-      <div className="about-container"></div>
+      <div className="about-container">
+        <div className="about-container__images">
+          <div className="img img-1" />
+          <div className="img img-2" />
+        </div>
+        <div className="about-container__content">
+          <div className="title-small">ABOUT US</div>
+          <div className="title">
+            A Great Place <br />
+            For <b>Medical Care</b>
+          </div>
+          <div className="sub">
+            But I must explain to you how all this mistaken idea of denouncing
+            pleasure and praising pain was born and I will give you a complete
+            account of the system, the actual teachings of the great explorer of
+            the truth.
+          </div>
+          <button className="button">LEARN MORE</button>
+        </div>
+      </div>
+
+      <div className="services-container">
+        <div className="texts">
+          <div className="title-small">SERVICES</div>
+          <div className="title">Services We Offer</div>
+          <div className="sub">
+            But I must explain to you how all this mistaken idea of denouncing
+            pleasure and praising pain was born and I will give you a complete
+            account of the.
+          </div>
+        </div>
+
+        <div className="boxes">
+          <div className="box"></div>
+        </div>
+      </div>
     </div>
   );
 };
