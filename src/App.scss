@@ -209,7 +209,7 @@
 }
 
 .services-container {
-  padding: 100px 100px;
+  padding: 100px 5%;
   padding-top: 40px;
 
   .texts {
@@ -221,7 +221,7 @@
 
     .sub {
       color: #262626;
-      padding: 0 21%;
+      padding: 0 24%;
       line-height: 1.4;
     }
 
@@ -231,14 +231,71 @@
       font-weight: bold;
       padding: 10px 0;
     }
+
+    margin-bottom: 50px;
   }
 
   .boxes {
     display: flex;
 
+
     .box {
       background: #242C90;
       box-shadow: 0 7px 23px 0 #C6CAFB;
+      margin-right: 30px;
+      border-radius: 5px;
+
+      &:last-of-type {
+        margin-right: 0;
+      }
+
+      .content {
+        padding: 80px 45px;
+        padding-bottom: 30px;
+        color: #ffffff;
+
+        .icon {
+          width: 60px;
+          padding: 30px 0;
+          padding-top: 10px;
+        }
+
+        .title-small {
+          color: #D6D6D6;
+          font-size: 12px;
+        }
+
+        .title {
+          font-weight: bold;
+          font-size: 32px;
+          padding: 20px 0;
+        }
+
+        .doc {
+          padding: 39px 0;
+        }
+
+        .sub {
+          font-size: 14.5px;
+          line-height: 1.7;
+          padding-right: 5px;
+        }
+
+        .more {
+          text-align: right;
+          color: #00DCFF;
+          padding: 10px 0;
+          padding-top: 40px;
+          text-transform: uppercase;
+          font-size: 12px;
+          letter-spacing: .5px;
+
+          img {
+            width: 13px;
+            margin-left: 5px;
+          }
+        }
+      }
     }
   }
 }
@@ -284,6 +341,22 @@
       padding: 0 50px;
     }
   }
+
+  .services-container {
+    padding: 100px 40px;
+
+    .texts {
+      .sub {
+        padding: 0 15%;
+      }
+    }
+
+    .boxes {
+      .box {
+        margin-right: 20px;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 950px) {
@@ -319,6 +392,29 @@
 
     &__content {
       padding: 20px 170px;
+    }
+  }
+
+  .services-container {
+    padding: 50px 5%;
+
+    .texts {
+      .sub {
+        padding: 0 2%;
+      }
+    }
+
+    .boxes {
+      flex-direction: column;
+
+      .box {
+        margin-right: 0;
+        margin-bottom: 30px;
+
+        &:last-of-type {
+          margin: 0;
+        }
+      }
     }
   }
 }
@@ -411,6 +507,16 @@
       .fill-circle,
       .border-circle {
         display: none;
+      }
+    }
+  }
+
+  .services-container {
+    .boxes {
+      .box {
+        .content {
+          padding: 40px 25px;
+        }
       }
     }
   }

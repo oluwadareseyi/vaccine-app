@@ -1,5 +1,7 @@
 import React from "react";
 import "./App.scss";
+import Tablets from "./assets/images/Icon awesome-tablets.svg";
+import Arrow from "./assets/images/arrow.svg";
 
 const App = () => {
   return (
@@ -75,7 +77,54 @@ const App = () => {
         </div>
 
         <div className="boxes">
-          <div className="box"></div>
+          <div className="box">
+            <div className="content">
+              <img src={Tablets} alt="tablets" className="icon" />
+              <div className="title-small">OLDER & CHILDREN</div>
+              <div className="title">
+                Medication <br /> Tracker
+              </div>
+              <div className="sub">
+                But I must explain to you how all this mistaken idea of
+                denouncing pleasure and praising pain was born.
+              </div>
+              <div className="more">
+                Learn More <img src={Arrow} alt="arrow" />
+              </div>
+            </div>
+          </div>
+
+          <div className="box">
+            <div className="content">
+              <img src={Tablets} alt="tablets" className="icon" />
+              <div className="title-small">CHILDREN</div>
+              <div className="title">
+                Vaccination <br /> Tracker
+              </div>
+              <div className="sub">
+                But I must explain to you how all this mistaken idea of
+                denouncing pleasure and praising pain was born.
+              </div>
+              <div className="more">
+                Learn More <img src={Arrow} alt="arrow" />
+              </div>
+            </div>
+          </div>
+
+          <div className="box">
+            <div className="content">
+              <img src={Tablets} alt="tablets" className="icon" />
+              <div className="title-small">OLDER & CHILDREN</div>
+              <div className="title doc">DocChat</div>
+              <div className="sub">
+                But I must explain to you how all this mistaken idea of
+                denouncing pleasure and praising pain was born.
+              </div>
+              <div className="more">
+                Learn More <img src={Arrow} alt="arrow" />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
