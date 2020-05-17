@@ -1,6 +1,8 @@
 import React from "react";
 import "./App.scss";
 import Tablets from "./assets/images/Icon awesome-tablets.svg";
+import Syringe from "./assets/images/Icon metro-injection.svg";
+import Bubbles from "./assets/images/Icon ionic-ios-chatbubbles.svg";
 import Arrow from "./assets/images/arrow.svg";
 
 const App = () => {
@@ -96,7 +98,7 @@ const App = () => {
 
           <div className="box">
             <div className="content">
-              <img src={Tablets} alt="tablets" className="icon" />
+              <img src={Syringe} alt="tablets" className="icon syr" />
               <div className="title-small">CHILDREN</div>
               <div className="title">
                 Vaccination <br /> Tracker
@@ -113,7 +115,7 @@ const App = () => {
 
           <div className="box">
             <div className="content">
-              <img src={Tablets} alt="tablets" className="icon" />
+              <img src={Bubbles} alt="tablets" className="icon syr" />
               <div className="title-small">OLDER & CHILDREN</div>
               <div className="title doc">DocChat</div>
               <div className="sub">
