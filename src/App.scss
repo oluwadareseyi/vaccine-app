@@ -1,3 +1,287 @@
-.App {
-  text-align: center;
+@import './index.scss';
+
+@mixin button {
+  outline: none;
+  border: transparent;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.top-container {
+  overflow: hidden;
+  display: flex;
+  color: #ffffff;
+  font-family: "Proxima Nova", sans-serif;
+
+  .button {
+    @include button;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: #36B4FF;
+    color: #ffffff;
+    padding: 10px 30px;
+  }
+
+  .get {
+    padding: 13px 28px;
+    font-size: 12px;
+  }
+
+  &__left {
+    background: #2E37A4;
+    width: 92%;
+    border-bottom-right-radius: 330px;
+    position: relative;
+
+    .mother {
+      width: 520px;
+      height: 480px;
+      z-index: 10;
+      background: url("./assets/images/mother-child.jpg") center;
+      background-size: cover;
+      border-radius: 50% 0 50% 50%;
+      top: 100px;
+      right: -100px;
+      position: absolute;
+    }
+
+    .fill-circle {
+      background: #303BB7;
+      position: absolute;
+      bottom: -350px;
+      left: -160px;
+      border-radius: 50%;
+      width: 500px;
+      height: 500px;
+      border: solid 1px #3844c0;
+      box-shadow: 0 0 0 15px #2E37A4 inset;
+    }
+
+    .border-circle {
+      border: solid 1px #3844c0;
+      position: absolute;
+      top: -200px;
+      right: 20px;
+      width: 500px;
+      height: 500px;
+      // background: #000000;
+      border-radius: 50%;
+    }
+
+    .nav {
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+
+      .logo {
+        color: #36B4FF;
+        font-family: "Freight", sans-serif;
+        font-size: 30px;
+      }
+
+      .nav-items {
+        color: #ffffff;
+        display: flex;
+        font-weight: normal;
+        font-size: 13px;
+        align-items: center;
+      }
+    }
+
+    .nav-item {
+      margin-left: 25px;
+      cursor: pointer;
+
+      &:first-of-type {
+        margin-left: 0;
+      }
+    }
+  }
+
+  &__right {
+    background: #ffffff;
+    width: 13%;
+    text-align: center;
+    padding: 16px 10px;
+  }
+
+  .content {
+    padding: 95px 0;
+    padding-bottom: 160px;
+    padding-left: 80px;
+
+    .update {
+      background: #242C90;
+      display: flex;
+      padding: 5px 0;
+      padding-left: 5px;
+      align-items: center;
+      border-radius: 30px;
+      width: 420px;
+      font-size: 12.5px;
+
+      .new {
+        text-transform: uppercase;
+        background: #36B4FF;
+        padding: 7px 27px;
+        margin-right: 20px;
+        border-radius: 30px;
+      }
+    }
+
+    .title {
+      font-weight: bold;
+      width: 540px;
+      font-size: 55px;
+    }
+
+    .sub {
+      width: 380px;
+      margin-top: -10px;
+      font-size: 16px;
+      line-height: 1.8;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.about-container {
+  
+}
+
+
+@media screen and (max-width: 1050px) {
+  .top-container {
+
+    .button {
+      padding: 10px 25px;
+    }
+
+    .content {
+      padding-left: 60px;
+
+      .title {
+        font-size: 32px;
+        width: 400px;
+      }
+
+      .update {
+        width: 400px;
+      }
+    }
+
+    &__left {
+      .mother {
+        width: 450px;
+        height: 410px;
+      }
+
+      .border-circle {
+        width: 400px;
+        height: 400px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .top-container {
+
+    &__left {
+      width: 100%;
+
+      // .mother {
+      //   display: none;
+      // }
+
+      .nav .nav-items {
+        display: none;
+      }
+
+
+    }
+
+    &__right {
+      display: none;
+    }
+  }
+}
+
+
+@media screen and (max-width: 820px) {
+  .top-container {
+    .content {
+      padding-left: 30px;
+    }
+
+    &__left {
+      .mother {
+        width: 400px;
+        height: 360px;
+      }
+
+      .border-circle {
+        width: 350px;
+        height: 350px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .top-container {
+    &__left {
+      .mother {
+        width: 360px;
+        height: 320px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .top-container {
+
+    .content {
+      display: flex;
+      flex-direction: column-reverse;
+      padding: 0 10px;
+
+      .inner {
+        padding: 20px 5%;
+        margin: auto;
+      }
+
+      .update {
+        width: 100%;
+      }
+
+      .title,
+      .sub {
+        width: 100%;
+      }
+    }
+
+    &__left {
+      border-bottom-right-radius: 0;
+
+      .nav {
+        margin-bottom: 35px;
+      }
+
+      .mother {
+        position: static;
+        width: 90%;
+        margin: auto;
+        // height: unset;
+        border-radius: 5px;
+        margin-bottom: 20px;
+      }
+
+      .fill-circle,
+      .border-circle {
+        display: none;
+      }
+    }
+  }
 }
