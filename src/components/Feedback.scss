@@ -115,8 +115,6 @@
                 width: 100%;
             }
         }
-
-        .right {}
     }
 
     .quote-container {
@@ -141,10 +139,10 @@
 
 @media screen and (max-width: 350px) {
     .quote-container {
-        width: 250px;
+        width: 280px;
 
         .text {
-            width: 250px;
+            width: 280px;
         }
     }
 }
