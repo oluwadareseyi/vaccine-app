@@ -517,7 +517,7 @@
     }
 
     input {
-      border: none;
+      border: 0;
       border-bottom: 2px solid #ffffff;
       background: transparent;
       outline: none;
@@ -526,7 +526,6 @@
       padding: 0;
       width: 300px;
       color: #ffffff;
-      height: 26px;
       margin-top: 18px;
 
       &::placeholder {
