@@ -66,8 +66,12 @@
 
         .quote {
             transition: transform 500ms ease-in-out;
-            transform: translate(-440px);
+            transform: translate(0);
             width: 440px;
+        }
+
+        .translate {
+            transform: translate(-440px);
         }
 
         .text {
