@@ -983,13 +983,17 @@
   }
 
   .about-container {
+    flex-direction: column;
+
     &__images {
-      flex-direction: column;
       align-items: center;
+      margin-top: 0;
+      margin-bottom: 30px;
 
       .img-1 {
         margin: 0;
-        margin-bottom: 20px;
+        display: none;
+        margin-bottom: 10px;
       }
     }
   }
