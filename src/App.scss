@@ -592,6 +592,14 @@
 }
 
 
+@media screen and (min-width: 1300px) {
+  .top-container {
+    .content {
+      padding-left: 150px;
+    }
+  }
+}
+
 
 @media screen and (max-width: 1050px) {
   .top-container {
