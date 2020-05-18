@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./App.scss";
 import FeedBack from "./components/Feedback";
 import Tablets from "./assets/images/Icon awesome-tablets.svg";
@@ -6,10 +6,23 @@ import Syringe from "./assets/images/Icon metro-injection.svg";
 import Bubbles from "./assets/images/Icon ionic-ios-chatbubbles.svg";
 import Arrow from "./assets/images/arrow.svg";
 import Mail from "./assets/images/Icon feather-mail.svg";
+import SideDrawer from "./components/SideDrawer/SideDrawer";
+import DrawerToggle from "./components/SideDrawer/DrawerToggle/DrawerToggle";
 
 const App = () => {
+  const [drawer, setDrawer] = useState(false);
+
+  const toggleDrawer = () => {
+    setDrawer(!drawer);
+  };
+
+  const closeModal = () => {
+    setDrawer(false);
+  };
   return (
     <div className="App">
+      <DrawerToggle toggle={toggleDrawer} />
+      <SideDrawer clicked={closeModal} hide={toggleDrawer} show={drawer} />
       <div className="top-container">
         <div className="top-container__left">
           <nav className="nav">
