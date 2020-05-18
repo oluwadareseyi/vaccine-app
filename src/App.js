@@ -222,6 +222,34 @@ const App = () => {
           <button className="button">Subscribe</button>
         </div>
       </div>
+
+      <footer className="footer-container">
+        <div className="content con-1">
+          <div className="title">Sitemap</div>
+          <div className="sub">Home</div>
+          <div className="sub">Services</div>
+          <div className="sub">About Us</div>
+          <div className="sub">Blog</div>
+          <div className="sub">Careers</div>
+        </div>
+        <div className="content con-2">
+          <div className="title">Contact Us</div>
+          <div className="sub">Phone</div>
+          <div className="sub">(+234) 812 873 9485</div>
+          <div className="sub">Social</div>
+          <div className="icons">
+            <i class="fab fa-linkedin-in"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-facebook-square"></i>
+          </div>
+        </div>
+        <div className="content con-3">
+          <div className="title">Address</div>
+          <div className="sub">
+            No 6 Chief Mathiew Close Off Tombia Street, Port Harcourt, Nigeria.
+          </div>
+        </div>
+      </footer>
     </div>
   );
 };
