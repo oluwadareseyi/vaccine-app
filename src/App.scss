@@ -10,6 +10,26 @@
   padding: 10px 30px;
 }
 
+@mixin button2 {
+  outline: none;
+  cursor: pointer;
+  border-color: transparent;
+  border-radius: 6px;
+}
+
+@mixin title {
+  color: #2E37A4;
+  font-size: 32px;
+  font-weight: bold;
+  padding: 10px 0;
+}
+
+
+@mixin title-small {
+  font-size: 12px;
+  padding-bottom: 10px;
+}
+
 .top-container {
   overflow: hidden;
   display: flex;
@@ -302,6 +322,66 @@
   }
 }
 
+.location {
+  background: url("./assets/images/map.jpg") rgba(0, 0, 0, .2);
+  background-blend-mode: multiply;
+  background-size: contain;
+  padding: 80px 10%;
+  padding-left: 47%;
+  color: #ffffff;
+
+  .find-box {
+    background: #242C90;
+
+    .title {
+      font-size: 36px;
+    }
+
+    .sub {
+      padding-right: 60px;
+      font-size: 15px;
+      line-height: 2;
+    }
+
+    .input-con {
+      position: relative;
+      padding: 20px 0;
+    }
+
+    input {
+      border-radius: 30px;
+      border: none;
+      background: #ffffff;
+      outline: none;
+      padding: 14px 30px;
+      width: 85%;
+      font-size: 18px;
+
+      &::placeholder {
+        color: #929090;
+        font-size: 15px;
+      }
+    }
+
+    button {
+      @include button2;
+      background: #36B4FF;
+      color: #ffffff;
+      font-weight: bold;
+      font-size: 15px;
+      text-transform: uppercase;
+      border-radius: 30px;
+      padding: 13.5px 40px;
+      position: absolute;
+      right: -2px;
+    }
+  }
+
+  .content {
+    padding: 30px 60px;
+  }
+}
+
 
 @media screen and (max-width: 1050px) {
   .top-container {
@@ -356,6 +436,16 @@
     .boxes {
       .box {
         margin-right: 20px;
+      }
+    }
+  }
+
+  .location {
+    padding-left: 30%;
+
+    .find-box {
+      button {
+        padding: 13.9px 40px;
       }
     }
   }
@@ -419,6 +509,10 @@
       }
     }
   }
+
+  .location {
+    padding-left: 20%;
+  }
 }
 
 
@@ -439,6 +533,10 @@
         height: 350px;
       }
     }
+  }
+
+  .location {
+    padding: 100px 5%;
   }
 }
 
@@ -519,6 +617,44 @@
         .content {
           padding: 40px 25px;
         }
+      }
+    }
+  }
+
+  .location {
+    .content {
+      padding: 30px 30px;
+    }
+
+    .find-box {
+      .title {
+        font-size: 30px;
+      }
+
+      .sub {
+        padding-right: 10px;
+      }
+
+      .input-con {
+        text-align: center;
+      }
+
+      input {
+        padding: 10px 20px;
+        margin-bottom: 5px;
+        box-sizing: border-box;
+        width: 90%;
+        // margin: auto;
+
+        &::placeholder {
+          font-size: 14px;
+        }
+      }
+
+      button {
+        width: 90%;
+        position: static;
+        padding: 10px 40px;
       }
     }
   }

@@ -132,6 +132,26 @@ const App = () => {
       </div>
 
       <FeedBack />
+
+      <div className="location">
+        <div className="find-box">
+          <div className="content">
+            <h2 className="title">
+              Let's Find A Hospital <br /> Near You.
+            </h2>
+            <p className="sub">
+              But I must explain to you how all this mistaken idea of denouncing
+              pleasure and praising pain was born and I will give you a complete
+              account of the system, and expound the actual teachings of the
+              great explorer of.
+            </p>
+            <div className="input-con">
+              <input placeholder="Enter Your Location" type="text" />
+              <button className="button">Search</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
