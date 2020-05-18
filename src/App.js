@@ -5,6 +5,7 @@ import Tablets from "./assets/images/Icon awesome-tablets.svg";
 import Syringe from "./assets/images/Icon metro-injection.svg";
 import Bubbles from "./assets/images/Icon ionic-ios-chatbubbles.svg";
 import Arrow from "./assets/images/arrow.svg";
+import Mail from "./assets/images/Icon feather-mail.svg";
 
 const App = () => {
   return (
@@ -204,6 +205,22 @@ const App = () => {
           </div>
         </div>
         <button className="button">Keep Reading</button>
+      </div>
+
+      <div className="newsletter">
+        <div className="title">
+          Subscribe To Our <b>NewsLetter</b>
+        </div>
+        <p className="sub">
+          Receive our weekly digest of featured health articles
+        </p>
+        <div className="input-con">
+          <div className="container">
+            <img src={Mail} alt="mail" />
+            <input type="text" placeholder="example@mail.com" />
+          </div>
+          <button className="button">Subscribe</button>
+        </div>
       </div>
     </div>
   );

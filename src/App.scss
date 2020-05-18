@@ -469,6 +469,80 @@
 
 }
 
+.newsletter {
+  padding: 100px 8%;
+  background: rgba($color: #242C90, $alpha: 0.08);
+  text-align: center;
+
+  .sub {
+    color: #262626;
+    // font-size: 14px;
+    padding-bottom: 50px;
+  }
+
+  .title {
+    font-size: 36px;
+    padding-bottom: 10px;
+
+    b {
+      color: #242C90;
+    }
+  }
+
+  .input-con {
+    display: flex;
+    justify-content: space-between;
+    background: #242C90;
+    padding: 30px 50px;
+    padding-left: 80px;
+    border-radius: 55px;
+
+    button {
+      @include button2;
+    }
+
+    .container {
+      display: flex;
+      margin-bottom: 5px;
+
+      img {
+        width: 35px;
+        margin-right: 10px;
+        margin-top: 20px;
+      }
+    }
+
+    input {
+      border: none;
+      border-bottom: 2px solid #ffffff;
+      background: transparent;
+      outline: none;
+      font-size: 18px;
+      line-height: 0;
+      padding: 0;
+      width: 300px;
+      color: #ffffff;
+
+      &::placeholder {
+        color: #ffffff;
+        opacity: .7;
+        font-size: 18px;
+      }
+    }
+
+    button {
+      @include button2;
+      background: #36B4FF;
+      color: #ffffff;
+      font-weight: bold;
+      font-size: 15px;
+      text-transform: uppercase;
+      border-radius: 30px;
+      padding: 2px 45px;
+    }
+  }
+}
+
 
 
 @media screen and (max-width: 1050px) {
@@ -661,6 +735,14 @@
   .location {
     padding: 100px 5%;
   }
+
+  .newsletter {
+    .input-con {
+      input {
+        width: 220px;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 750px) {
@@ -779,6 +861,31 @@
         position: static;
         padding: 10px 40px;
       }
+    }
+  }
+
+  .newsletter {
+    .input-con {
+      flex-direction: column;
+      padding: 40px 30px;
+      border-radius: 2px;
+
+      .container {
+        margin-bottom: 30px;
+      }
+
+      input {
+        width: 100%;
+      }
+
+      button {
+        padding: 10px 20px;
+      }
+    }
+
+    .sub {
+      padding: 10px 20px;
+      padding-bottom: 30px;
     }
   }
 }
