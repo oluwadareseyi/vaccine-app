@@ -83,7 +83,7 @@ const App = () => {
         <div className="boxes">
           <div className="box">
             <div className="content">
-              <img src={Tablets} alt="tablets" className="icon" />
+              <img src={Tablets} alt="tablets" className="icon tablet" />
               <div className="title-small">OLDER & CHILDREN</div>
               <div className="title">
                 Medication <br /> Tracker

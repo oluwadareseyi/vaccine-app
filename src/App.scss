@@ -274,6 +274,10 @@
           padding-top: 10px;
         }
 
+        .tablet {
+          margin-top: 10px;
+        }
+
         .title-small {
           color: #D6D6D6;
           font-size: 12px;
@@ -286,7 +290,7 @@
         }
 
         .doc {
-          padding: 39px 0;
+          padding: 36px 0;
         }
 
         .sub {
@@ -522,8 +526,8 @@
       padding: 0;
       width: 300px;
       color: #ffffff;
-      height: 25px;
-      margin-top: 19px;
+      height: 26px;
+      margin-top: 18px;
 
       &::placeholder {
         color: #ffffff;
