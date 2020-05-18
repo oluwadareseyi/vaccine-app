@@ -56,7 +56,7 @@
       width: 520px;
       height: 480px;
       z-index: 10;
-      background: url("./assets/images/mother-child.jpg") center;
+      background: url("./assets/images/mother-child.jpg") rgba(0, 0, 0, .4) center;
       background-size: cover;
       border-radius: 50% 0 50% 50%;
       top: 100px;
@@ -836,15 +836,20 @@
     .content {
       display: flex;
       flex-direction: column-reverse;
-      padding: 0 10px;
+      padding: 40px 10px;
+      position: relative;
 
       .inner {
-        padding: 40px 5%;
+        padding: 80px 10%;
         margin: auto;
+        position: absolute;
+        top: 0;
+        z-index: 20;
       }
 
       .update {
         width: 100%;
+        background: transparent;
       }
 
       .title,
@@ -855,6 +860,11 @@
 
     &__left {
       border-bottom-right-radius: 0;
+
+      .mother {
+        background-blend-mode: multiply;
+        height: 450px;
+      }
 
       .nav {
         margin-bottom: 35px;
@@ -1007,6 +1017,14 @@
 }
 
 @media screen and (max-width: 380px) {
+
+  .top-container {
+    &__left {
+      .mother {
+        width: 95%;
+      }
+    }
+  }
 
   .services-container {
     padding: 100px 5%;
