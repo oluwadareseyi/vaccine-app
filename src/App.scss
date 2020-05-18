@@ -930,10 +930,12 @@
       }
 
       input {
-        padding: 10px 20px;
+        padding: 15px 20px;
         margin-bottom: 5px;
+        font-size: 14px;
         box-sizing: border-box;
         width: 90%;
+        border-radius: 5px;
         // margin: auto;
 
         &::placeholder {
@@ -942,9 +944,10 @@
       }
 
       button {
+        border-radius: 5px;
         width: 90%;
         position: static;
-        padding: 10px 40px;
+        padding: 12px 40px;
       }
     }
   }
@@ -1041,9 +1044,8 @@
   }
 
   .footer-container {
-    margin: auto;
+    padding: 100px 7%;
     text-align: center;
-
 
     .con-3 {
       margin-top: 30px;
