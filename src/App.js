@@ -152,6 +152,59 @@ const App = () => {
           </div>
         </div>
       </div>
+
+      <div className="blog-container">
+        <div className="title-small">BLOG</div>
+        <div className="title">Latest Articles</div>
+        <div className="sub">Stay on top of the news on all health matters</div>
+        <div className="article-boxes">
+          <div className="box box-1">
+            <div className="top"></div>
+            <div className="bottom">
+              <div className="meta">
+                <div className="date">17th April, 2020</div>
+                <div className="time">5-min read</div>
+              </div>
+              <h4>But I Must Explain To You How</h4>
+              <p>
+                But I Must Explain To You How All This Mistaken Idea Denouncing
+                Plea....
+              </p>
+            </div>
+          </div>
+
+          <div className="box box-2">
+            <div className="top"></div>
+            <div className="bottom">
+              <div className="meta">
+                <div className="date">17th April, 2020</div>
+                <div className="time">5-min read</div>
+              </div>
+              <h4>But I Must Explain To You How</h4>
+              <p>
+                But I Must Explain To You How All This Mistaken Idea Denouncing
+                Plea....
+              </p>
+            </div>
+          </div>
+
+          <div className="box box-3">
+            <div className="top"></div>
+            <div className="bottom">
+              <div className="meta">
+                <div className="date">17th April, 2020</div>
+                <div className="time">5-min read</div>
+              </div>
+              <h4>But I Must Explain To You How</h4>
+              <p>
+                But I Must Explain To You How All This Mistaken Idea Denouncing
+                Plea....
+              </p>
+            </div>
+          </div>
+        </div>
+        <button className="button">Keep Reading</button>
+      </div>
     </div>
   );
 };
